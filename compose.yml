@@ -3,6 +3,8 @@ services:
     image: nf9k/dvmfne:latest
     container_name: dvmfne
     restart: unless-stopped
+    ports:
+      - 62031:62031
     volumes:
       - ~/docker/dvmfne-docker/config.yml:/opt/dvmfne/config.yml
       - ~/docker/dvmfne-docker/talkgroup_rules.yml:/opt/dvmfne/talkgroup_rules.yml
