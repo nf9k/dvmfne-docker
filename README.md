@@ -8,5 +8,5 @@
     CHANGEME_ID - site peer ID (from connectivity plan, ex 311802)
     CHANGEME_LOCATION - site location name (i.e. Indianapolis, IN)
 
-5). edit talkgroup_rules.yml as required
+5). edit talkgroup_rules.yml as required  
 6). docker-compose up -d
