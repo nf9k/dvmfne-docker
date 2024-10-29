@@ -1,0 +1,61 @@
+#
+# Digital Voice Modem - Talkgroup Rules
+#
+# @package DVM / Host Software
+#
+
+# 
+# Talkgroup Rules
+#
+groupVoice:
+    # Textual name of the talkgroup.
+  - name: Parrot
+    #
+    # Talkgroup Configuration
+    #
+    config:
+      # Flag indicating whether this talkgroup is active or not.
+      active: true
+      # Flag indicating whether this talkgroup will only repeat with affiliations.
+      affiliated: false
+      # Flag indicating whether or not this talkgroup is a parrot talkgroup.
+      parrot: true
+      # List of peer IDs included for this talkgroup (peers listed here will be selected for traffic).
+      inclusion: []
+      # List of peer IDs excluded for this talkgroup (peers listed here will be ignored for traffic).
+      exclusion: []
+      # List of peer talkgroup rewrites.
+      rewrite: []
+    #
+    # Source Configuration
+    #
+    source:
+      # Numerical talkgroup ID number.
+      tgid: 9990
+      # DMR slot number.
+      slot: 1
+
+    # Textual name of the talkgroup.
+  - name: IN Statewide
+    #
+    # Talkgroup Configuration
+    #
+    config:
+      # Flag indicating whether this talkgroup is active or not.
+      active: true
+      # Flag indicating whether this talkgroup will only repeat with affiliations.
+      affiliated: false
+      # List of peer IDs included for this talkgroup (peers listed here will be selected for traffic).
+      inclusion: []
+      # List of peer IDs excluded for this talkgroup (peers listed here will be ignored for traffic).
+      exclusion: []
+      # List of peer talkgroup rewrites.
+      rewrite: []
+    #
+    # Source Configuration
+    #
+    source:
+      # Numerical talkgroup ID number.
+      tgid: 3118
+      # DMR slot number.
+      slot: 1

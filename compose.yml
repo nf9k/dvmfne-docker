@@ -1,0 +1,9 @@
+services:
+  dvmfne:
+    image: nf9k/dvmfne:latest
+    container_name: dvmfne
+    restart: unless-stopped
+    volumes:
+      - ~/docker/dvmfne-docker/config.yml:/opt/dvmfne/config.yml
+      - ~/docker/dvmfne-docker/talkgroup_rules.yml:/opt/dvmfne/talkgroup_rules.yml
+      - ~/docker/dvmfne-device/logs:/opt/dvmfne/logs
